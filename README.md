@@ -20,7 +20,7 @@ Location: City, Region, Country
 Lat/lon: 0.0000,0.0000
 ```
 
-$ $ curl -H 'Accept: text/html' http://localhost:3000
+$ curl -H 'Accept: text/html' http://localhost:3000
 ```html
 <!doctype html>
 ...
