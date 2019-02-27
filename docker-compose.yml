@@ -1,0 +1,17 @@
+version: "3"
+services:
+  yourip:
+     image: squeezeday/yourip
+     container_name: yourip
+     restart: unless-stopped       
+     networks:
+       - http_network
+    #  labels:
+    #   - "traefik.backend=yourip"
+    #   - "traefik.frontend.rule=Host: myapp.com; PathPrefix: /ip; PathPrefixStrip: /ip"
+    #   - "traefik.port=3000"
+    #   - "traefik.enable=true"
+     
+networks:
+  http_network:
+    external: true

@@ -1,0 +1,6 @@
+<%= ip %>
+User-Agent: <%= useragent %><% if (geodata) { %>
+Location: <%= geodata.city %>, <%= geodata.region %>, <%= geodata.country %>
+Lat/lon: <%= geodata.ll[0] + ',' + geodata.ll[1] %>
+<% } else { %>
+Location: Unknown<% } %>
